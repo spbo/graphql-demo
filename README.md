@@ -24,7 +24,7 @@ The server starts at http://localhost:3000/ .
 ### Logic description
 Project is made up of two components: `App` and `DisplayData`.
 
-`App` - Main component which is responsible for fetching weather info with the help of apollo library. When user types a city name and click the button, an async call to "https://api.openweathermap.org/data/2.5/weather?appid=${process.env.KEY}" API is made. It also retrieves/ saves the user inputs in local storage.
+`App` - Main component which is responsible for fetching weather info with the help of apollo library. When user types a city name and click the button, an async call to 'api.openweathermap.org/data/2.5/weather?appid={API_key}&q={city_name}' API is made. It also retrieves/ saves the user inputs in local storage.
 
 `DisplayData`- Component responsible only for rendering fetched data.
 
