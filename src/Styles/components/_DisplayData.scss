@@ -1,0 +1,74 @@
+.info {
+  display: flex;
+  margin: 2% 1.5% 0px;
+  justify-content: center;
+
+  & > p {
+    margin: 0 1rem;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    justify-items: flex-start;
+    margin: 2rem 1.5% 2rem;
+
+    & > p {
+      margin: 0 0.2rem;
+    }
+  }
+}
+
+.weather {
+  display: flex;
+  justify-items: space-evenly;
+  margin: auto 1.5%;
+  word-wrap: break-word;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: inherit;
+  }
+
+  & .title {
+    display: flex;
+    justify-items: center;
+    font-size: 1.5rem;
+  }
+
+  & .subtitle {
+    font-weight: 600;
+  }
+}
+
+.summary,
+.temperature,
+.wind,
+.clouds {
+  border: 2px solid black;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 1.5%;
+  padding: 0px 1rem;
+  word-wrap: break-all;
+}
+
+.title_img {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 800px) {
+    justify-content: flex-start;
+  }
+}
+
+.summary_img,
+.temperature_img,
+.wind_img,
+.clouds_img {
+  width: 30px;
+  margin: auto 1rem;
+}

@@ -1,0 +1,94 @@
+.content-container {
+  margin: 0 auto;
+  padding: 0 25.6px;
+  max-width: 90%;
+
+  @media (max-width: 800px) {
+    margin: 0 auto;
+    padding: unset;
+    max-width: 95%;
+  }
+}
+
+.header {
+  margin: 1% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: Bradley Hand, cursive;
+
+  @media (max-width: 800px) {
+    margin: 4% auto;
+  }
+}
+
+.user-menu {
+  margin: 3% auto 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .user-menu_input {
+    margin: 0 15px 0 0;
+    width: 20rem;
+
+    label {
+      font-size: large;
+      color: inherit;
+    }
+
+    input {
+      font-size: large;
+    }
+
+    .MuiFormHelperText-root.Mui-error {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .user-menu_button {
+    width: 15rem;
+    height: 3rem;
+    background-color: white;
+  }
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  @media (max-width: 800px) {
+    margin: 3rem auto 1rem;
+  }
+}
+
+.city_not_found,
+.error {
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+
+  @media (max-width: 800px) {
+    margin: 5rem;
+  }
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
+}
